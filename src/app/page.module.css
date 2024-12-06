@@ -1,0 +1,56 @@
+.container{
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    overflow: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: grey transparent;
+
+    container: query / inline-size;
+}
+
+
+
+.tableContainer{
+    width:100%;
+    
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.tableContainer table{
+    width: 95%;
+    border-collapse: collapse;
+    /* border-radius: 1%; */
+    border: none;
+    /* overflow: hidden; */
+}
+.tableContainer th, .tableContainer td{
+    padding: 1rem;
+    border: none;
+}
+.tableContainer th{
+    background: silver;
+}
+.tableContainer tr:nth-of-type(odd){
+    background: white;
+}
+.tableContainer tr:nth-of-type(even){
+    background: grey;
+}
+
+@media(width <= 640px), (orientation:portrait){
+    .tableContainer table{
+        font-size:0.5rem;
+    }
+    .tableContainer tr td:nth-of-type(4),
+    .tableContainer tr td:nth-of-type(5){
+        font-size:0.25rem;
+    }
+}

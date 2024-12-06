@@ -1,0 +1,54 @@
+:root {
+    --16px: 1rem;
+    --24px: 1.5rem;
+    --32px: 2rem;
+    --48px: 3rem;
+    --56px: 3.5rem;
+    --64px: 4rem;
+    --72px: 4.5rem;
+    --80px: 5rem;
+    --96px: 6rem;
+    --112px: 7rem;
+    --128px: 8rem;
+    --160px: 10rem;
+    --192px: 12rem;
+    --224px: 14rem;
+    --256px: 16rem;
+    --320px: 20rem;
+    --352px: 22rem;
+    --384px: 24rem;
+    --400px: 25rem;
+    --448px: 28rem;
+    --512px: 32rem;
+    --1440px: 90rem; 
+    
+
+}
+
+@media(prefers-color-scheme:dark){
+    :root{
+        --white: var(--colour6);
+    }
+}
+
+
+    
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* font-family: "OCR A Std", monospace; */
+    /* font-family: "Copperplate", fantasy; */
+    scroll-behavior: smooth;
+}
+
+body{
+    height:100vh;
+    height:100svh;
+    width:100vw;
+    overflow-x:hidden;
+    position: fixed;
+    scrollbar-width: thin;
+    scrollbar-color: grey transparent;
+}
